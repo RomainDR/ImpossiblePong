@@ -1,9 +1,24 @@
 #include "GUIContent.h"
 //#include "../../Core/CoreEngineObject.h"
-//#include "../../ViewPort.h"
+//#include "../../Window/Viewport.h"
 #include <iostream>
 
+#pragma region constructor/destructor
+GUIContent::GUIContent()
+{
+}
+GUIContent::~GUIContent()
+{
+	/*
+	delete  makeTriangleButton, makeSquareButton, makeCircleButton;
+	makeTriangleButton = makeSquareButton = makeCircleButton = nullptr;
+	*/
+}
+#pragma endregion constructor/destructor
+#pragma region methods
 
+#pragma endregion methods
+#pragma region override
 void GUIContent::Tick()
 {
 
@@ -16,3 +31,5 @@ void GUIContent::Tick()
 			ViewPort::SetShape(new Circle(FVector(ViewPort::Width / 2, ViewPort::Height / 2), 50));
 	*/
 }
+
+#pragma endregion override

@@ -76,6 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -90,6 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,9 +141,14 @@
     <ClCompile Include="Core\Object\EngineObject\EngineObject.cpp" />
     <ClCompile Include="Core\Object\GameObject\GameObject.cpp" />
     <ClCompile Include="Core\Object\GUIObject\GUIObject.cpp" />
+
+    <ClCompile Include="Core\Object\GUIObject\Label\Label.cpp" />
+    <ClCompile Include="SFML_BaseProject.cpp" />
+
     <ClCompile Include="Core\Ressource\Content\Content.cpp" />
     <ClCompile Include="Core\Ressource\DataBase\DataBase.cpp" />
     <ClCompile Include="Core\Ressource\GUI\GUIContent.cpp" />
+
     <ClCompile Include="Core\Window\Viewport.cpp" />
     <ClCompile Include="SFML_BaseProject.cpp" />
   </ItemGroup>
@@ -154,6 +161,12 @@
     <ClInclude Include="Core\Object\EngineObject\EngineObject.h" />
     <ClInclude Include="Core\Object\GameObject\GameObject.h" />
     <ClInclude Include="Core\Object\GUIObject\GUIObject.h" />
+
+    <ClInclude Include="Core\Object\GUIObject\Label\Label.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Ressource\GUI\GUIContent.h" />
+
     <ClInclude Include="Core\Ressource\Content\Content.h" />
     <ClInclude Include="Core\Ressource\DataBase\DataBase.h" />
     <ClInclude Include="Core\Ressource\GUI\GUIContent.h" />
