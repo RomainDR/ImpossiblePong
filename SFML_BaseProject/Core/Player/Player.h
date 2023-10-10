@@ -10,6 +10,7 @@ public:
 	Player(const int& _speed = 10, const int& _sizeHeight = 500);
 
 public:
+	void InitPosition();
 	void MoveUp();
 	void MoveDown();
 	void Draw(RenderWindow* _window);
