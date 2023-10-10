@@ -5,7 +5,7 @@ class Ball : public GameObject
 {
 private:
 	CircleShape* shape = nullptr;
-	float speed = 0.1f;
+	float speed = 0.01f;
 	bool invertX = false;
 	bool invertY = false;
 	Clock clock;

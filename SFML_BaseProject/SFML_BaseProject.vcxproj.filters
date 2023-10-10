@@ -51,10 +51,7 @@
     <ClCompile Include="Core\GameContent\Ball\Ball.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Core\Object\GUIObject\GUIObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\Object\GUIObject\GUIObject.cpp">
+    <ClCompile Include="Core\Object\GUIObject\GuiObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -74,9 +71,6 @@
       <Filter>Resource Files\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Core\Object\GameObject\GameObject.h">
-      <Filter>Resource Files\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\Object\GUIObject\GUIObject.h">
       <Filter>Resource Files\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Core\Ressource\Content\Content.h">
@@ -121,7 +115,7 @@
     <ClInclude Include="Core\Utils\CoreUI.h">
       <Filter>Resource Files\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Core\Object\GUIObject\GUIObject.h">
+    <ClInclude Include="Core\Object\GUIObject\GuiObject.h">
       <Filter>Resource Files\Header Files</Filter>
     </ClInclude>
   </ItemGroup>

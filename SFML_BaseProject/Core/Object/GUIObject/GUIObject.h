@@ -1,6 +1,5 @@
 #pragma once
 #include "../EngineObject/EngineObject.h"
-
 class GuiObject : public EngineObject
 {
 public:
