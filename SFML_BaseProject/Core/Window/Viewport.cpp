@@ -6,12 +6,11 @@ Viewport::Viewport(const int& _width, const int& _height, const std::string& _ti
 {
 	window = new RenderWindow(VideoMode(_width, _height), _title);
 
-	ball = new Ball();
 }
 
 Viewport::~Viewport()
 {
-	delete window, ball;
+	delete window;
 }
 
 void Viewport::Draw()
@@ -27,8 +26,6 @@ void Viewport::Draw()
 			
 		}
 		window->clear();
-
-		ball->Draw(window);
 
 		DrawAllUI();
 
