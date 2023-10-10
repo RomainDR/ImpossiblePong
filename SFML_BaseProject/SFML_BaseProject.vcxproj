@@ -139,6 +139,7 @@
     <ClCompile Include="Core\Object\EngineObject\EngineObject.cpp" />
     <ClCompile Include="Core\Object\GameObject\GameObject.cpp" />
     <ClCompile Include="Core\Object\GUIObject\GUIObject.cpp" />
+
     <ClCompile Include="Core\Object\GUIObject\Label\Label.cpp" />
     <ClCompile Include="Core\Ressource\Content\Content.cpp" />
     <ClCompile Include="Core\Ressource\DataBase\DataBase.cpp" />
@@ -163,10 +164,12 @@
     <ClInclude Include="Core\Ressource\DataBase\DataBase.h" />
     <ClInclude Include="Core\Ressource\GUI\GUIContent.h" />
     <ClInclude Include="Core\Utils\Core.h" />
+    <ClInclude Include="Core\Utils\CoreUI.h" />
     <ClInclude Include="Core\Utils\Settings.h" />
     <ClInclude Include="Core\Utils\SFMLCore.h" />
     <ClInclude Include="Core\Window\Viewport.h" />
     <ClInclude Include="Core\Player\Player.h" />
+
     <ClInclude Include="Core\IA\IA.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>

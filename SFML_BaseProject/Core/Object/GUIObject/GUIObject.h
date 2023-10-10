@@ -4,6 +4,6 @@
 class GUIObject: public EngineObject
 {
 public:
-	virtual void Draw(RenderWindow* _window) override;
+	virtual void Draw(RenderWindow* _window) override {};
 };
 

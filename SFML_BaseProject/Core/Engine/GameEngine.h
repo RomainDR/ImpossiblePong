@@ -5,9 +5,9 @@ class GameEngine
 {
 #pragma region f/p
 private:
-	//Database* database = nullptr;
+	DataBase* database = nullptr;
 	Viewport* viewport = nullptr;
-
+	GUIContent* UI = nullptr;
 #pragma endregion f/p
 #pragma region constructor
 public:

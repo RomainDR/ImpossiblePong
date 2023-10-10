@@ -13,6 +13,7 @@ Player::Player(const int& _speed, const int& _sizeHeight)
 Player::~Player()
 {
 	delete shape;
+
 }
 
 void Player::InitPosition()
@@ -21,9 +22,11 @@ void Player::InitPosition()
 }
 void Player::MoveUp()
 {
+	shape->move(FVector(500, 500));
 
 	shape->setPosition(FVector(shape->getPosition().x, shape->getPosition().y - speed));
 	if(shape->getGlobalBounds().top < 0) shape->setPosition(FVector(shape->getPosition().x,0 + shape->getSize().y /2));
+
 }
 
 void Player::MoveDown()
