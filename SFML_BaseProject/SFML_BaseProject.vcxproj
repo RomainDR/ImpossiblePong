@@ -135,6 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Core\Object\GUIObject\Button\Button.cpp" />
     <ClCompile Include="Core\GameContent\Ball\Ball.cpp" />
     <ClCompile Include="Core\Engine\GameEngine.cpp" />
     <ClCompile Include="Core\Object\EngineObject\EngineObject.cpp" />
@@ -152,6 +153,7 @@
     <ResourceCompile Include="SFML_BaseProject.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Core\Object\GUIObject\Button\Button.h" />
     <ClInclude Include="Core\GameContent\Ball\Ball.h" />
     <ClInclude Include="Core\Event\Action.h" />
     <ClInclude Include="Core\Engine\GameEngine.h" />

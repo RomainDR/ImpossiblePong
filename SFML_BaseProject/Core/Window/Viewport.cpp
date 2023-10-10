@@ -6,6 +6,8 @@ Viewport::Viewport(const int& _width, const int& _height, const std::string& _ti
 {
 	window = new RenderWindow(VideoMode(_width, _height), _title);
 
+	contentUI = new GUIContent(window);
+
 }
 
 Viewport::~Viewport()
@@ -28,13 +30,14 @@ void Viewport::Draw()
 		window->clear();
 
 		DrawAllUI();
-
+		contentUI->Tick();
 		window->display();
 	}
 }
 
 void Viewport::InitAllUI(GUIContent* _contentUI)
 {
+	contentUI = _contentUI;
 	allUIObject = _contentUI->Get();
 }
 

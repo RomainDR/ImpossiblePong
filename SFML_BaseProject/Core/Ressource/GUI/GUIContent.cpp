@@ -1,39 +1,46 @@
 #include "GUIContent.h"
-#include "../../Utils/CoreUI.h"
+#include "../../Utils/Settings.h"
 #include <iostream>
 
 #pragma region constructor/destructor
-GUIContent::GUIContent()
+GUIContent::GUIContent(RenderWindow* _render)
 {
-	allUIObject.push_back(new Label("Hello",FVector(500,500), FVector(0, 0), 50));
-	allUIObject.push_back(new Label("Hi", FVector(560, 500), FVector(0, 0), 50));
-	allUIObject.push_back(new Label("How", FVector(610, 500), FVector(0, 0), 50));
+	StartGame = new Button(FVector(WIDTH / 2, HEIGHT / 2), FVector(100, 50), _render);
+
+
+	allUIObject.push_back(new Label("Impossible Pong",FVector(WIDTH/2,HEIGHT/3), FVector(0, 0), 100));
+	allUIObject.push_back(StartGame);
+
+
+	StartGame->OnClicked().Bind(this, &GUIContent::Clean);
 }
 GUIContent::~GUIContent()
 {
-	for (EngineObject* _obj : allUIObject)
+	for (GuiObject* _obj : allUIObject)
+	{
 		delete _obj;
-	/*
-	delete  makeTriangleButton, makeSquareButton, makeCircleButton;
-	makeTriangleButton = makeSquareButton = makeCircleButton = nullptr;
-	*/
+		_obj = nullptr;
+	}
+	delete  StartGame;
+	StartGame = nullptr;
+	
+	
 }
 #pragma endregion constructor/destructor
 #pragma region methods
-
+void GUIContent::Clean()
+{
+	
+	for (size_t i = 0; i < allUIObject.size(); i++)
+	{
+		allUIObject[i]->SetColor(Color::Transparent);
+		allUIObject[i]->SetActive(false);
+	}
+}
 #pragma endregion methods
 #pragma region override
 void GUIContent::Tick()
 {
-
-	/*
-		if (makeTriangleButton && makeTriangleButton->IsCliked())
-			ViewPort::SetShape(new RegularTriangle(FVector(ViewPort::Width / 2, ViewPort::Height / 2), 50, Color::White));
-		if (makeSquareButton && makeSquareButton->IsCliked())
-			ViewPort::SetShape(new Square(FVector(ViewPort::Width / 2, ViewPort::Height / 2), 50));
-		if (makeCircleButton && makeCircleButton->IsCliked())
-			ViewPort::SetShape(new Circle(FVector(ViewPort::Width / 2, ViewPort::Height / 2), 50));
-	*/
+	StartGame->IsCliked();
 }
-
 #pragma endregion override

@@ -4,7 +4,7 @@ GameEngine::GameEngine(const string& _title, const int& _width, const int& _heig
 {
 	database = new DataBase();
 	viewport = new Viewport(_width, _height, _title);
-	UI = new GUIContent();
+	UI = new GUIContent(viewport->GetWindow());
 }
 
 GameEngine::~GameEngine()

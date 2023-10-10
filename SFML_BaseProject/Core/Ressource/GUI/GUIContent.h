@@ -2,26 +2,29 @@
 #include <vector>
 #include "../../GameContent/GameContent.h"
 #include "../../Object/GUIObject/GUIObject.h"
-//#include "../../Object/Button.h"
+#include "../../Utils/CoreUI.h"
 
 class GUIContent :public  GameContent
 {
 #pragma region f/p
 private:
 	vector<GuiObject*> allUIObject;
-	//Button* makeSquareButton = nullptr;
-	//Button* makeTriangleButton = nullptr;
-	//Button* makeCircleButton = nullptr;
+	Button* StartGame = nullptr;
 #pragma endregion f/p
 #pragma region constructor/destructor
 public:
-	GUIContent();
+	GUIContent(RenderWindow* _render);
 	~GUIContent();
 #pragma endregion constructor/destructor
-#pragma region methods
+#pragma region Acesseur
 public:
 	inline vector<GuiObject*>Get() const { return allUIObject; }
-#pragma endregion methods
+	inline Button* GetStartGame() const { return StartGame; }
+#pragma endregion Acesseur
+#pragma region Method
+private:
+	void Clean();
+#pragma endregion Method
 #pragma region override
 public:
 	void Tick() override;
