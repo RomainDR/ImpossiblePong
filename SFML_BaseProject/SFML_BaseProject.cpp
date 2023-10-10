@@ -6,9 +6,8 @@
 
 int main()
 {
-	GameEngine* _engine = new GameEngine("P2-Exercice", 800, 600);
-	_engine->StartEngine();
-
+	GameEngine* _engine = new GameEngine("ImpossiblePong", WIDTH, HEIGHT);
+	_engine->StartEngine(); 
 
 	delete _engine;
 }

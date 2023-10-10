@@ -149,9 +149,6 @@
     <ResourceCompile Include="SFML_BaseProject.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="SFML_BaseProject.aps" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Core\Engine\GameEngine.h" />
     <ClInclude Include="Core\GameContent\GameContent.h" />
     <ClInclude Include="Core\Object\EngineObject\EngineObject.h" />
