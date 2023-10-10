@@ -4,7 +4,7 @@
 #include <string>
 
 
-class Label :public GUIObject
+class Label :public GuiObject
 {
 #pragma region f/p
 private:

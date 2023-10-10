@@ -42,7 +42,7 @@ void Viewport::InitAllUI(GUIContent* _contentUI)
 
 void Viewport::DrawAllUI()
 {
-	for (GUIObject* _UI : allUIObject)
+	for (GuiObject* _UI : allUIObject)
 	{
 		if (!_UI)
 			continue;
@@ -52,6 +52,6 @@ void Viewport::DrawAllUI()
 
 void Viewport::ClearUI()
 {
-	for (GUIObject* _UI: allUIObject)
+	for (GuiObject* _UI: allUIObject)
 		delete _UI;
 }

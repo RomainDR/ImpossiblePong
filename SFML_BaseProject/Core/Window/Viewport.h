@@ -7,7 +7,7 @@
 class Viewport
 {
 private:
-	vector<GUIObject*> allUIObject;
+	vector<GuiObject*> allUIObject;
 	RenderWindow* window = nullptr;
 	int width = 0;
 	int height = 0;
