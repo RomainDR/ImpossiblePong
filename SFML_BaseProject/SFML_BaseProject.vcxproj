@@ -138,12 +138,15 @@
     <ClCompile Include="Core\Engine\GameEngine.cpp" />
     <ClCompile Include="Core\Object\EngineObject\EngineObject.cpp" />
     <ClCompile Include="Core\Object\GameObject\GameObject.cpp" />
+    <ClCompile Include="Core\Object\GUIObject\GUIObject.cpp" />
+
     <ClCompile Include="Core\Object\GUIObject\Label\Label.cpp" />
     <ClCompile Include="Core\Ressource\Content\Content.cpp" />
     <ClCompile Include="Core\Ressource\DataBase\DataBase.cpp" />
     <ClCompile Include="Core\Ressource\GUI\GUIContent.cpp" />
     <ClCompile Include="Core\Window\Viewport.cpp" />
     <ClCompile Include="Core\Player\Player.cpp" />
+    <ClCompile Include="Core\IA\IA.cpp" />
     <ClCompile Include="SFML_BaseProject.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +169,8 @@
     <ClInclude Include="Core\Utils\SFMLCore.h" />
     <ClInclude Include="Core\Window\Viewport.h" />
     <ClInclude Include="Core\Player\Player.h" />
+
+    <ClInclude Include="Core\IA\IA.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
