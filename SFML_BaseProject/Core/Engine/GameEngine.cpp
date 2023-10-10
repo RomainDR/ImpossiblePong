@@ -9,3 +9,8 @@ GameEngine::~GameEngine()
 {
 	delete viewport;
 }
+
+void GameEngine::StartEngine()
+{
+	DEBUG("Sa marche");
+}

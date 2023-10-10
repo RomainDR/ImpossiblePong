@@ -123,6 +123,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>..\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,30 +135,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Core\Ressource\GUI\GUIContent.cpp" />
+    <ClCompile Include="Core\Engine\GameEngine.cpp" />
+    <ClCompile Include="Core\Object\EngineObject\EngineObject.cpp" />
+    <ClCompile Include="Core\Object\GameObject\GameObject.cpp" />
+    <ClCompile Include="Core\Object\GUIObject\GUIObject.cpp" />
     <ClCompile Include="Core\Ressource\Content\Content.cpp" />
     <ClCompile Include="Core\Ressource\DataBase\DataBase.cpp" />
-    <ClCompile Include="Core\Engine\GameEngine.cpp" />
-    <ClCompile Include="Core\Object\GameObject\GameObject.cpp" />
-    <ClCompile Include="Core\Object\EngineObject\EngineObject.cpp" />
-    <ClCompile Include="Core\Object\GUIObject\GUIObject.cpp" />
-    <ClCompile Include="SFML_BaseProject.cpp" />
+    <ClCompile Include="Core\Ressource\GUI\GUIContent.cpp" />
     <ClCompile Include="Core\Window\Viewport.cpp" />
+    <ClCompile Include="SFML_BaseProject.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Core\Utils\Core.h" />
+    <ResourceCompile Include="SFML_BaseProject.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SFML_BaseProject.aps" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="Core\Engine\GameEngine.h" />
-    <ClInclude Include="Core\Utils\SFMLCore.h" />
-    <ClInclude Include="Core\Window\Viewport.h" />
-    <ClInclude Include="Core\Object\GameObject\GameObject.h" />
+    <ClInclude Include="Core\GameContent\GameContent.h" />
     <ClInclude Include="Core\Object\EngineObject\EngineObject.h" />
+    <ClInclude Include="Core\Object\GameObject\GameObject.h" />
     <ClInclude Include="Core\Object\GUIObject\GUIObject.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Core\Ressource\GUI\GUIContent.h" />
     <ClInclude Include="Core\Ressource\Content\Content.h" />
     <ClInclude Include="Core\Ressource\DataBase\DataBase.h" />
-    <ClInclude Include="Core\GameContent\GameContent.h" />
+    <ClInclude Include="Core\Ressource\GUI\GUIContent.h" />
+    <ClInclude Include="Core\Utils\Core.h" />
+    <ClInclude Include="Core\Utils\SFMLCore.h" />
+    <ClInclude Include="Core\Window\Viewport.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
