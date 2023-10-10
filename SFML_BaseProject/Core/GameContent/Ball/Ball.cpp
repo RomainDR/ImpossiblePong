@@ -32,9 +32,9 @@ void Ball::Move()
 		speed *= 1.20f;
 		clock.restart();
 	}
-	float _x = 0;
-	if(invertX) shape->getPosition().x - speed * 1;
-	else shape->getPosition().x + speed * 1;
+	float _x;
+	if (invertX) _x = shape->getPosition().x - (speed * 1.f);
+	else _x = shape->getPosition().x + (speed * 1.f);
 	shape->setPosition(_x, 450);
-	if (_x >= WIDTH) invertX = !invertX;
+	if (_x + shape->getRadius() >= WIDTH || _x + shape->getRadius() <= 0) invertX = !invertX;
 }

@@ -51,9 +51,6 @@
     <ClCompile Include="Core\GameContent\Ball\Ball.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Core\Object\GUIObject\GuiObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SFML_BaseProject.rc">
