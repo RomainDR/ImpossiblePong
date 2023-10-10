@@ -136,6 +136,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Core\Engine\GameEngine.cpp" />
+    <ClCompile Include="Core\GameContent\GameContent.cpp" />
     <ClCompile Include="Core\Object\EngineObject\EngineObject.cpp" />
     <ClCompile Include="Core\Object\GameObject\GameObject.cpp" />
     <ClCompile Include="Core\Object\GUIObject\GUIObject.cpp" />

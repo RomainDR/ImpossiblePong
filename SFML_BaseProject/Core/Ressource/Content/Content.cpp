@@ -1,6 +1,5 @@
 #include "Content.h"
-//#include "../../Core/CoreEngineObject.h"
-//#include "../../ViewPort.h"
+#include "../../Object/EngineObject/EngineObject.h"
 #include <iostream>
 
 
@@ -35,5 +34,10 @@ Content::~Content()
 #pragma region Method
 void Content::Tick()
 {
+}
+void Content::Draw(RenderWindow* _window)
+{
+	for (EngineObject* _obj : engineObjects)
+		_obj->Draw(_window);
 }
 #pragma endregion Method

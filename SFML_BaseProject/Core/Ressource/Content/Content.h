@@ -1,11 +1,16 @@
 #pragma once
 #include <vector>
+<<<<<<< Updated upstream
 #include "../../GameContent/GameContent.h"
 //#include "../../Object/EngineObject.h"
+=======
+#include "../../Object/EngineObject/EngineObject.h"
+>>>>>>> Stashed changes
 
 
 using namespace std;
-class Content : public GameContent
+
+class Content : public EngineObject
 {
 #pragma region f/p
 private:
@@ -20,7 +25,8 @@ public:
 #pragma endregion Constructeur/Destructeur
 #pragma region Method
 public:
-	void Tick() override;
+	virtual void Tick();
+	virtual void Draw(RenderWindow* _window) override;
 #pragma endregion Method
 };
 

@@ -1,17 +1,27 @@
 #pragma once
+#include "../Ressource/Content/Content.h"
+#include "Player/Player.h"
+#include "Ball/Ball.h"
+#include "IA/IA.h"
 
-
-class GameContent
+class GameContent : public Content
 {
-
+private:
+	std::vector<GameObject*> gameObjects = std::vector<GameObject*>();
 #pragma region constructor/destructor
 public:
-	GameContent() = default;
-	~GameContent() = default;
+	GameContent(RenderWindow* _window);
+	~GameContent();
 #pragma endregion constructor/destructor
 #pragma region methods
 public:
-	virtual void Tick() {};
+	void InitGame();
+	Player* GetPlayer() const;
+	Ball* GetBall() const;
+	IA* GetIA() const;
+	virtual void Draw(RenderWindow* _window) override;
+	void CheckBallCollide();
+	bool HasLost() const;
 #pragma endregion methods
 
 };

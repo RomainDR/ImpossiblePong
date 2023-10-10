@@ -3,6 +3,7 @@
 
 class EngineObject
 {
+public:
 	virtual void Draw(RenderWindow* _window) = 0;
 };
 
