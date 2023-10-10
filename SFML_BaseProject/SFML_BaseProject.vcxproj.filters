@@ -18,6 +18,14 @@
     <ClCompile Include="SFML_BaseProject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Ressource\Content\Content.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Ressource\DataBase\DataBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Ressource\GUI\GUIContent.cpp">
+
     <ClCompile Include="Core\Engine\GameEngine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -35,6 +43,17 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Core\Ressource\Content\Content.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Ressource\DataBase\DataBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Ressource\GUI\GUIContent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GameContent\GameContent.h">
+
     <ClInclude Include="Core\Engine\GameEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
