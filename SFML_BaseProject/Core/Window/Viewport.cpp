@@ -5,7 +5,7 @@
 Viewport::Viewport(const int& _width, const int& _height, const std::string& _title)
 {
 	window = new RenderWindow(VideoMode(_width, _height), _title);
-	ball = new Ball();
+
 }
 
 Viewport::~Viewport()
@@ -26,7 +26,32 @@ void Viewport::Draw()
 			
 		}
 		window->clear();
+
 		ball->Draw(window);
+
+		DrawAllUI();
+
 		window->display();
 	}
+}
+
+void Viewport::InitAllUI(GUIContent* _contentUI)
+{
+	allUIObject = _contentUI->Get();
+}
+
+void Viewport::DrawAllUI()
+{
+	for (GUIObject* _UI : allUIObject)
+	{
+		if (!_UI)
+			continue;
+		_UI->Draw(window);
+	}
+}
+
+void Viewport::ClearUI()
+{
+	for (GUIObject* _UI: allUIObject)
+		delete _UI;
 }

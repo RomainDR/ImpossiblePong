@@ -1,14 +1,18 @@
 #include "GUIContent.h"
-//#include "../../Core/CoreEngineObject.h"
-//#include "../../Window/Viewport.h"
+#include "../../Utils/CoreUI.h"
 #include <iostream>
 
 #pragma region constructor/destructor
 GUIContent::GUIContent()
 {
+	allUIObject.push_back(new Label("Hello",FVector(500,500), FVector(0, 0), 50));
+	allUIObject.push_back(new Label("Hi", FVector(560, 500), FVector(0, 0), 50));
+	allUIObject.push_back(new Label("How", FVector(610, 500), FVector(0, 0), 50));
 }
 GUIContent::~GUIContent()
 {
+	for (EngineObject* _obj : allUIObject)
+		delete _obj;
 	/*
 	delete  makeTriangleButton, makeSquareButton, makeCircleButton;
 	makeTriangleButton = makeSquareButton = makeCircleButton = nullptr;

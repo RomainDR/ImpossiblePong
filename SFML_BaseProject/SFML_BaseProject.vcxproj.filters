@@ -27,9 +27,6 @@
     <ClCompile Include="Core\Object\GameObject\GameObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Core\Object\GUIObject\GUIObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Core\Ressource\Content\Content.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

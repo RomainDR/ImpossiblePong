@@ -1,5 +1,7 @@
 #include "Label.h"
 #include "../../../Ressource/DataBase/DataBase.h"
+#include "../../../Utils/CoreUI.h"
+
 
 #pragma region constructor/destructor
 Label::Label(const string& _text, const FVector& _position, const FVector& _origin, const unsigned int& _size, const float& _rotation, const Color& _color)
@@ -20,7 +22,9 @@ Label::~Label()
 #pragma region override
 void Label::Draw(RenderWindow* _window)
 {
+	
 	if(_window)
 		_window->draw(text);
+	
 }
 #pragma endregion override
