@@ -1,8 +1,6 @@
 #pragma once
 #include "../Utils/SFMLCore.h"
 #include "../GameContent/Ball/Ball.h"
-#include "../Utils/Core.h"
-#include "../Player/Player.h"
 #include "../Object/GUIObject/GUIObject.h"
 #include "../Ressource/GUI/GUIContent.h"
 
