@@ -5,11 +5,12 @@ class Player: public GameObject
 {
 private:
 	RectangleShape* shape = nullptr;
-	float multiplierSpeed = 10;
+	int speed = 0;
 public:
-	Player(const int& _speed = 10, const int& _sizeHeight = 500);
+	Player(const int& _speed = 1, const int& _sizeHeight = 150);
 
 public:
+	void InitPosition();
 	void MoveUp();
 	void MoveDown();
 	void Draw(RenderWindow* _window);

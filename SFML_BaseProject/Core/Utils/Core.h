@@ -1,6 +1,5 @@
 #pragma once
 #include "../Window/Viewport.h"
-#include "Settings.h"
 
 #include <iostream>
 
