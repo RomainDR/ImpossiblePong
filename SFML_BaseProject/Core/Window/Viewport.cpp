@@ -5,12 +5,12 @@
 Viewport::Viewport(const int& _width, const int& _height, const std::string& _title)
 {
 	window = new RenderWindow(VideoMode(_width, _height), _title);
-	
+	ball = new Ball();
 }
 
 Viewport::~Viewport()
 {
-	delete window;
+	delete window, ball;
 }
 
 void Viewport::Draw()
@@ -26,7 +26,7 @@ void Viewport::Draw()
 			
 		}
 		window->clear();
-		
+		ball->Draw(window);
 		window->display();
 	}
 }

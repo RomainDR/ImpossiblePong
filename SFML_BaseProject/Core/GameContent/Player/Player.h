@@ -1,5 +1,5 @@
 #pragma once
-#include "../Object/GameObject/GameObject.h"
+#include "../../Object/GameObject/GameObject.h"
 
 class Player: public GameObject
 {
@@ -11,7 +11,7 @@ public:
 	~Player();
 
 public:
-	void InitPosition();
+	virtual void InitPosition() override;
 	void MoveUp();
 	void MoveDown();
 	void Draw(RenderWindow* _window);

@@ -135,6 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Core\GameContent\Ball\Ball.cpp" />
     <ClCompile Include="Core\Engine\GameEngine.cpp" />
     <ClCompile Include="Core\Object\EngineObject\EngineObject.cpp" />
     <ClCompile Include="Core\Object\GameObject\GameObject.cpp" />
@@ -144,14 +145,15 @@
     <ClCompile Include="Core\Ressource\DataBase\DataBase.cpp" />
     <ClCompile Include="Core\Ressource\GUI\GUIContent.cpp" />
     <ClCompile Include="Core\Window\Viewport.cpp" />
-    <ClCompile Include="Core\Player\Player.cpp" />
-    <ClCompile Include="Core\IA\IA.cpp" />
+    <ClCompile Include="Core\GameContent\Player\Player.cpp" />
+    <ClCompile Include="Core\GameContent\IA\IA.cpp" />
     <ClCompile Include="SFML_BaseProject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SFML_BaseProject.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Core\GameContent\Ball\Ball.h" />
     <ClInclude Include="Core\Event\Action.h" />
     <ClInclude Include="Core\Engine\GameEngine.h" />
     <ClInclude Include="Core\GameContent\GameContent.h" />
@@ -166,8 +168,8 @@
     <ClInclude Include="Core\Utils\Settings.h" />
     <ClInclude Include="Core\Utils\SFMLCore.h" />
     <ClInclude Include="Core\Window\Viewport.h" />
-    <ClInclude Include="Core\Player\Player.h" />
-    <ClInclude Include="Core\IA\IA.h" />
+    <ClInclude Include="Core\GameContent\Player\Player.h" />
+    <ClInclude Include="Core\GameContent\IA\IA.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

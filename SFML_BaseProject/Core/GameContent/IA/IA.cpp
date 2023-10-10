@@ -1,5 +1,5 @@
 #include "IA.h"
-#include "../Utils/Settings.h"
+#include "../../Utils/Settings.h"
 
 IA::IA(const int& _sizeHeight)
 {

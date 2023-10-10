@@ -1,6 +1,6 @@
 #include "Player.h"
-#include "../Utils/Settings.h"
-#include "../Utils/Core.h"
+#include "../../Utils/Settings.h"
+#include "../../Utils/Core.h"
 
 Player::Player(const int& _speed, const int& _sizeHeight)
 {
