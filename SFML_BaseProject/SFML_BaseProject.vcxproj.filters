@@ -45,6 +45,12 @@
     <ClCompile Include="Core\Player\Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Object\GUIObject\Label\Label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IA\IA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SFML_BaseProject.rc">
@@ -97,5 +103,14 @@
     <ClInclude Include="Core\Utils\Settings.h">
       <Filter>Resource Files\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Core\Object\GUIObject\Label\Label.h">
+      <Filter>Resource Files\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IA\IA.h">
+      <Filter>Resource Files\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Fonts\Dateline.otf" />
   </ItemGroup>
 </Project>
