@@ -2,8 +2,13 @@
 //
 
 #include <iostream>
+#include "Core/Engine/GameEngine.h"
+#include "Core/Utils/Settings.h"
 
 int main()
 {
+	GameEngine* _engine = new GameEngine("ImpossiblePong", WIDTH, HEIGHT);
+	_engine->StartEngine(); 
 
+	delete _engine;
 }
