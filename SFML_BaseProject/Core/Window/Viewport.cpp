@@ -5,13 +5,12 @@
 Viewport::Viewport(const int& _width, const int& _height, const std::string& _title)
 {
 	window = new RenderWindow(VideoMode(_width, _height), _title);
-
-	ball = new Ball();
+	contentUI = new GUIContent(window);
 }
 
 Viewport::~Viewport()
 {
-	delete window, ball;
+	delete window;
 }
 
 void Viewport::Draw()
@@ -28,16 +27,15 @@ void Viewport::Draw()
 		}
 		window->clear();
 
-		ball->Draw(window);
-
 		DrawAllUI();
-
+		contentUI->Tick();
 		window->display();
 	}
 }
 
 void Viewport::InitAllUI(GUIContent* _contentUI)
 {
+	contentUI = _contentUI;
 	allUIObject = _contentUI->Get();
 }
 

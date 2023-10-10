@@ -9,7 +9,7 @@ struct Base
 template<class TCast, class TOwner>
 class ActionEvent : public Base
 {
-	typedef TCast(TOwner::* method)();
+	typedef TCast(TOwner::* Method)();
 	Method action = nullptr;
 	TOwner* owner = nullptr;
 

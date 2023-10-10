@@ -8,6 +8,7 @@ class Viewport
 {
 private:
 	vector<GuiObject*> allUIObject;
+	GUIContent* contentUI = nullptr;
 	RenderWindow* window = nullptr;
 	int width = 0;
 	int height = 0;
@@ -17,10 +18,11 @@ public:
 	Viewport(const int& _width, const int& _height, const std::string& _title);
 	~Viewport();
 public:
-	inline RenderWindow* GetWindow() { return window; };
+	inline RenderWindow* GetWindow() { return window; }
 public:
 	void Draw();
 	void InitAllUI(GUIContent* _contentUI);
+	inline void SetGUIContent(GUIContent* _contentUI) { contentUI = _contentUI;}
 private:
 	void ClearUI();
 	void DrawAllUI();

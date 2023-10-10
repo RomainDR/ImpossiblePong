@@ -27,7 +27,7 @@ public:
 	inline void SetText(const string _text) { text.setString(_text); }
 	inline void SetCharacterSize(const unsigned int _size) { text.setCharacterSize(_size); }
 	inline void SetScale(const FVector _scale) { text.setScale(_scale); }
-//	inline void SetColor(const Color _color) { text.setColor(_color); }
+	inline void SetColor(const Color _color) override { text.setFillColor(_color); }
 	inline void SetFillColor(const Color _color) { text.setFillColor(_color); }
 	inline void SetLetterSpacing(const float _spacing) { text.setLetterSpacing(_spacing); }
 	inline void SetLineSpacing(const float _spacing) { text.setLineSpacing(_spacing); }
