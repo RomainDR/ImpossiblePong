@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "Core/Engine/GameEngine.h"
+#include "Core/Utils/Settings.h"
 
 int main()
 {

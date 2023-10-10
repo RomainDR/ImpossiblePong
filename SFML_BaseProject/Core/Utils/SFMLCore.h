@@ -3,3 +3,4 @@
 
 
 using namespace sf;
+typedef Vector2f FVector;
