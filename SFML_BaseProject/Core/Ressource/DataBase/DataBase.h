@@ -1,11 +1,11 @@
-//#include "../Core/SFMLCore.h"
+#include "../../Utils/SFMLCore.h"
 
 
 class DataBase
 {
 #pragma region f/p
 public:
-	//static inline Font Font;
+	static inline Font Font;
 #pragma endregion f/p
 #pragma region Construct/Destruc
 public:
