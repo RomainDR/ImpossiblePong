@@ -51,7 +51,6 @@
     <ClCompile Include="Core\GameContent\Ball\Ball.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-
     <ClCompile Include="Core\Object\GUIObject\Button\Button.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -120,6 +119,9 @@
       <Filter>Resource Files\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Core\Object\GUIObject\Button\Button.h">
+      <Filter>Resource Files\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utils\CoreContent.h">
       <Filter>Resource Files\Header Files</Filter>
     </ClInclude>
   </ItemGroup>

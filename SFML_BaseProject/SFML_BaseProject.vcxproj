@@ -165,6 +165,7 @@
     <ClInclude Include="Core\Ressource\DataBase\DataBase.h" />
     <ClInclude Include="Core\Ressource\GUI\GUIContent.h" />
     <ClInclude Include="Core\Utils\Core.h" />
+    <ClInclude Include="Core\Utils\CoreContent.h" />
     <ClInclude Include="Core\Utils\CoreUI.h" />
     <ClInclude Include="Core\Utils\Settings.h" />
     <ClInclude Include="Core\Utils\SFMLCore.h" />
