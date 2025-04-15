@@ -1,6 +1,6 @@
 #include "Content.h"
-//#include "../../Core/CoreEngineObject.h"
-//#include "../../ViewPort.h"
+#include "../../Utils/Core.h"
+#include "../../Window/Viewport.h"
 #include <iostream>
 
 
